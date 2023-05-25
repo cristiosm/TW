@@ -30,9 +30,18 @@
                 <li><a href="page4.html">Special Looks</a></li>
                 <li><a href="page5.html">Designers</a></li>  
                 <li><a href="page6.html">History</a></li>
+                <li><a href="#" onclick="openEmailSection()" data-target="email-section">Buy</a></li>
             </ul>
         </div>
-    </div>
+</div>
+<div class="email-section" id="email-section">
+    <form>
+      <center><h3>Pentru a plasa o comandă, completează adresa de e-mail și te vom contacta cât de curând</h3></center>
+      <input type="email" placeholder="Adresa ta de email">
+      <button type="submit" style="margin-top: 10px;">Trimite</button>
+      <button type="button" onclick="closeEmailSection()" style="margin-top: 10px;">Anulează</button>
+    </form>
+  </div>
         <div class="image-container">
             <img src="../images/elsa.jpg">
         </div>
@@ -55,5 +64,7 @@
             <p>De-a lungul carierei sale, Daniel Roseberry a primit recunoaștere pentru contribuțiile sale la lumea modei. Colecțiile sale au fost prezentate în cadrul marilor evenimente de modă internaționale, iar designurile sale au fost purtate de personalități de marcă din industria divertismentului și de pe covorul roșu.</p>
             <p>Daniel Roseberry continuă să redefinească estetica și să inspire cu creațiile sale unice în cadrul casei Schiaparelli. El reprezintă o nouă generație de designeri de modă care aduc progres și inovație în industrie, păstrând în același timp respectul pentru tradiția și moștenirea artistică.</p>
         </center>
+        <script src="../js/email.js"></script>
+
     </body>
 </html>
