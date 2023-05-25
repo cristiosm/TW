@@ -3,6 +3,11 @@
 <head>
     <title>Schiaparelli</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/changeStyle.js" defer></script>
+    <script src="js/manipulateDOM.js" defer></script>
+    <script src="js/handleEvents.js" defer></script>
+    <script src="js/validateForm.js" defer></script>
 </head>
 
 <body>
@@ -29,27 +34,18 @@
                     <li><a href="pages/page5.html">Designers</a></li>  
                     <li><a href="pages/page6.html">History</a></li>
                     <li><a href="#" onclick="openEmailSection()" data-target="email-section">Buy</a></li>
-                      
-
                 </ul>
             </div>
+        </div>
     </div>
     <div class="email-section" id="email-section">
-        <form>
+        <form id="myForm">
           <center><h3>Pentru a plasa o comandă, completează adresa de e-mail și te vom contacta cât de curând</h3></center>
-          <input type="email" placeholder="Adresa ta de email">
+          <input type="email" id="email-input" placeholder="Adresa ta de email">
           <button type="submit" style="margin-top: 10px;">Trimite</button>
           <button type="button" onclick="closeEmailSection()" style="margin-top: 10px;">Anulează</button>
         </form>
-      </div>
-        <h2>Despre Casa de Modă Schiaparelli</h2>
-        <p>Casa de Modă Schiaparelli este o casă de modă celebră fondată de Elsa Schiaparelli în 1927. Schiaparelli a fost cunoscută pentru inovația și originalitatea sa în designul vestimentar.</p>
-        <h2>Istorie</h2>
-        <p>Casa de modă Schiaparelli a devenit rapid renumită în anii '30 și '40 pentru stilul său excentric și inovator. Elsa Schiaparelli a adus elemente precum modelele inspirate de arta suprarealistă, buzunare decorative și colaborări cu artiști de marcă.</p>
-        <h2>Elsa Schiaparelli</h2>
-        <p>Elsa Schiaparelli, născută pe 10 septembrie 1890 în Italia, a fost o designeră de modă italiană de origine franceză. Ea a fost una dintre primele femei care și-au deschis propria casă de modă. Stilul ei a fost considerat provocator și original, cu o abordare unică asupra modei și designului vestimentar.</p>
-        <p>Pentru Elsa Schiaparelli, moda a fost o formă de expresie artistică și o modalitate de a aduce inovație și imaginație în lumea vestimentară. Ea a colaborat cu artiști precum Salvador Dalí și Jean Cocteau, creând piese vestimentare care combină arta și moda.</p>
-        
-        <script src="js/email.js"></script>
-    </body>
+    </div>
+    <script src="js/email.js"></script>
+</body>
 </html>
