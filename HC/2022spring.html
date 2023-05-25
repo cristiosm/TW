@@ -30,8 +30,19 @@
                 </li>                <li><a href="../pages/page4.html">Special Looks</a></li>
                 <li><a href="../pages/page5.html">Designers</a></li>  
                 <li><a href="../pages/page6.html">History</a></li>
+                <li><a href="#" onclick="openEmailSection()" data-target="email-section">Buy</a></li>
             </ul>
         </div>
+</div>
+<div class="email-section" id="email-section">
+    <form>
+      <center><h3>Pentru a plasa o comandă, completează adresa de e-mail și te vom contacta cât de curând</h3></center>
+      <input type="email" placeholder="Adresa ta de email">
+      <button type="submit" style="margin-top: 10px;">Trimite</button>
+      <button type="button" onclick="closeEmailSection()" style="margin-top: 10px;">Anulează</button>
+    </form>
+  </div>
+  </div>
         <div class="grid">
             <img src="images/2022spring/(1).jpg">
             <img src="images/2022spring/(2).jpg">
@@ -68,5 +79,6 @@
         </div>
         
     </div>
+    <script src="../js/email.js"></script>
 </body>
 </html>
